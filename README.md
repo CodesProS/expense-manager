@@ -16,22 +16,23 @@ The app extracts items from receipts, organizes them into categories and tags, a
 - Cloud data storage with Supabase
 
 ---
+
 ## Screenshots
 
 ### Dashboard
 Shows monthly spending summaries and expense trends.
 
-![Dashboard](screenshots/home.png)
+![Dashboard](screenshots/home.PNG)
 
 ### Expense List
 Filter expenses by month or store and view all receipts.
 
-![Expenses](screenshots/expenses.png)
+![Expenses](screenshots/expenses.PNG)
 
 ### Categories
 Create and manage spending categories.
 
-![Categories](screenshots/categories.png)
+![Categories](screenshots/categories.PNG)
 ---
 
 ## Tech Stack

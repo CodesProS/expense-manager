@@ -1,50 +1,142 @@
-# Welcome to your Expo app 👋
+# Expense Manager
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile expense tracking application built with **React Native (Expo)** and **Supabase** that helps users manage their spending by scanning receipts, categorizing purchases, and analyzing expenses over time.
 
-## Get started
+The app extracts items from receipts, organizes them into categories and tags, and visualizes spending trends to provide insights into personal finances.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Track and manage daily expenses
+- Upload receipts and automatically extract items
+- Categorize purchases using tags and categories
+- Edit and manage parsed receipt items
+- View spending insights and analytics
+- Cloud data storage with Supabase
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Frontend
+- React Native
+- Expo
+- JavaScript / TypeScript
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Backend
+- Supabase
+- Supabase Edge Functions
 
-## Get a fresh project
+### Tools & Libraries
+- OpenAI API (for receipt parsing)
+- Expo Image Picker
+- React Native Chart Kit
+- Supabase JS SDK
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+## Project Structure
+
+```
+expense-manager
+│
+├── app
+│   └── (tabs)
+│       ├── index.jsx
+│       ├── explore.jsx
+│       └── _layout.jsx
+│
+├── lib
+│   └── supabase.js
+│
+├── supabase
+│   └── functions
+│
+├── assets
+│
+├── README.md
+└── package.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## How It Works
 
-To learn more about developing your project with Expo, look at the following resources:
+1. A user uploads a receipt image from the mobile app.
+2. The receipt is sent to a **Supabase Edge Function**.
+3. The function processes the receipt and extracts purchase items.
+4. Items are categorized and stored in the Supabase database.
+5. The app displays expenses and analytics for the user.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## Setup Instructions
 
-Join our community of developers creating universal apps.
+### 1. Clone the repository
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+git clone https://github.com/CodesProS/expense-manager.git
+cd expense-manager
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the root directory.
+
+Example:
+
+```
+EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+OPENAI_API_KEY=your_openai_key
+```
+
+### 4. Start the development server
+
+```bash
+npx expo start
+```
+
+You can run the app using:
+
+- Expo Go (mobile)
+- Android Emulator
+- iOS Simulator
+
+---
+
+## Future Improvements
+
+- Budget tracking and spending limits
+- Recurring expense support
+- Monthly financial reports
+- Improved receipt OCR accuracy
+- AI-based expense categorization
+- Multi-user support
+
+---
+
+## Screenshots
+
+You can add screenshots of the application here.
+
+Example:
+
+```
+screenshots/home.png
+screenshots/analytics.png
+screenshots/receipt.png
+```
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.

@@ -32,7 +32,17 @@ Filter expenses by month or store and view all receipts.
 ### Categories
 Create and manage spending categories.
 
-![Categories](screenshots/categories.PNG)
+![Categories](screenshots/categories.PNG)## Screenshots
+
+<p align="center">
+  <img src="screenshots/home.PNG" width="250"/>
+  <img src="screenshots/expenses.PNG" width="250"/>
+  <img src="screenshots/categories.PNG" width="250"/>
+</p>
+
+<p align="center">
+  <em>Dashboard • Expense List • Categories</em>
+</p>
 ---
 
 ## Tech Stack

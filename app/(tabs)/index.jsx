@@ -1628,9 +1628,6 @@ function ExpensesScreen({
         )}
       />
 
-      <TouchableOpacity style={styles.fab} onPress={onScan}>
-        <MaterialIcons name="add" size={32} color="#fff" />
-      </TouchableOpacity>
     </View>
   );
 
@@ -2287,9 +2284,7 @@ function CategoriesScreen({ categories, onCreateCategory, onGo, onScan }) {
         </TouchableOpacity>
       </ScrollView>
 
-      <TouchableOpacity style={styles.fab} onPress={onScan}>
-        <MaterialIcons name="add" size={32} color="#fff" />
-      </TouchableOpacity>
+
     </View>
   );
 }

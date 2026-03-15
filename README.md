@@ -19,21 +19,6 @@ The app extracts items from receipts, organizes them into categories and tags, a
 
 ## Screenshots
 
-### Dashboard
-Shows monthly spending summaries and expense trends.
-
-![Dashboard](screenshots/home.PNG)
-
-### Expense List
-Filter expenses by month or store and view all receipts.
-
-![Expenses](screenshots/expenses.PNG)
-
-### Categories
-Create and manage spending categories.
-
-![Categories](screenshots/categories.PNG)## Screenshots
-
 <p align="center">
   <img src="screenshots/home.PNG" width="250"/>
   <img src="screenshots/expenses.PNG" width="250"/>
@@ -43,6 +28,7 @@ Create and manage spending categories.
 <p align="center">
   <em>Dashboard • Expense List • Categories</em>
 </p>
+
 ---
 
 ## Tech Stack
